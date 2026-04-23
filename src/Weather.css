@@ -23,20 +23,24 @@
     line-height: 19px;
     list-style: none;
 }
+.clearfix {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 .Weather img {
     height: 70px;
     width: 70px;
-    display: inline-flex;
     border: 0;
 
 }
 .Weather .temperature {
-    display: inline-flex;
     font-weight: bold;
     color: rgb(33, 33, 33);
     font-size: 70px;
     font-weight: 400;
     line-height: 64px;
+    margin-left: 5px;
 }
 .Weather .unit {
     color: rgb(33, 33, 33);
@@ -44,5 +48,6 @@
     font-weight: 400;
     position: relative;
     line-height: 1;
-    top: -32px;
+    top: -25px;
+    margin-left: 0;
 }
