@@ -15,7 +15,7 @@ setWeatherData({
     humidity: response.data.main.humidity,
     date: new Date(response.data.dt*1000),
     description: response.data.weather[0].description,
-    iconUrl: "https://www.gstatic.com/weather/conditions/v1/svg/cloudy_light.svg",
+    iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     wind: response.data.wind.speed,
     city: response.data.name
 });
