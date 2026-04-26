@@ -11,7 +11,7 @@ export default function App() {
       <Weather defaultCity="Nairobi"/>
       <footer>
         This project was coded by Phillipa Atieno and is{" "}
-      <a href="https://github.com/Phillipa2/react-weather-app" target="_blank" rel="noreferrer">open-sourced on GitHub.</a>
+      <a href="https://github.com/Phillipa2/react-weather-app" target="_blank" rel="noreferrer">open-sourced on GitHub</a>.
       </footer>
       </div>
     </div>
