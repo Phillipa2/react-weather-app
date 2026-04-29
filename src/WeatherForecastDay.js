@@ -3,7 +3,8 @@ import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherForecastDay(props) {
     function day() {
-        let date = new Date(props.data.dt*1000);
+        let date = new Date(props.data.date);
+        date.toLocaleDateString("en-US", { weekday: "short" });
         let day = date.getDay();
 
         let days = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
@@ -13,10 +14,10 @@ export default function WeatherForecastDay(props) {
 return (
 <div>
     <div className="WeatherForecast-day">{day()}</div>
-    <WeatherIcon code={props.data.weather[0].icon} size={32} />
+    <WeatherIcon code={props.data.icon} size={32} />
     <div className="WeatherForecast-temp">
-        <span className="WeatherForecast-temp-max">{Math.round(props.data.main.temp_max)}°</span>
-        <span className="WeatherForecast-temp-min">{Math.round(props.data.main.temp_min)}°</span>
+        <span className="WeatherForecast-temp-max">{Math.round(props.data.temp_max)}°</span>
+        <span className="WeatherForecast-temp-min">{Math.round(props.data.temp_min)}°</span>
     </div>
 </div>
 );
